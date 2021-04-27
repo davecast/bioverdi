@@ -14,6 +14,10 @@
   --gray--dark: #afafaf;
 }
 
+/* html {
+  scroll-behavior: smooth;
+} */
+
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -853,6 +857,7 @@ a {
     grid-gap: 1.5rem;
     display: grid;
     grid-template: 1fr / 1fr 1fr;
+    margin: 0 0 2.5rem;
   }
   .benefitsList {
     grid-gap: 1.5rem;
@@ -1047,6 +1052,50 @@ a {
 
   .benefitsList {
     grid-template: 1fr / repeat(4, 0.25fr);
+  }
+
+  .banner__call__action .grid {
+    grid-template: 1fr / 0.5833fr 0.4166fr;
+    align-items: center;
+  }
+  .banner__call__action .title.t--center {
+    text-align: left;
+    margin: 0;
+  }
+  .banner__call__action .banner__box__action {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .banner__call__action .banner__box__action a:first-child {
+    margin: 0 0 1.5rem;
+  }
+  .banner__call__action .grid__item--1 {
+    position: relative;
+  }
+  .banner__call__action .grid__item--1::before {
+    position: absolute;
+    content: close-quote;
+    width: 2px;
+    bottom: 0;
+    background-color: #fff;
+    right: -117px;
+    top: 0;
+    opacity: 0.6;
+  }
+  .banner__call__action .grid__item--1::after {
+    width: 0px;
+    position: absolute;
+    content: close-quote;
+    height: 0px;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -124px;
+    opacity: 0.6;
   }
 
   .grid__aboutus {

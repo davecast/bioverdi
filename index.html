@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./image/favico.png" type="image/x-icon" />
     <title>Bioverdi</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -11,7 +12,7 @@
     <header id="header" class="header">
       <div class="container">
         <div class="header__content">
-          <a href="" class="header__logo">
+          <a href="#banner__principal" class="header__logo link__to__go">
             <img
               class="header__logo--color"
               src="./image/logo-color.png"
@@ -25,15 +26,26 @@
           </a>
           <nav id="menu" class="header__nav header__nav--hidden">
             <ul class="header__menu">
-              <li class="header__item"><a href="#">Productos</a></li>
-              <li class="header__item"><a href="#">Beneficios</a></li>
-              <li class="header__item"><a href="#">Uso</a></li>
-              <li class="header__item"><a href="#">Nosotros</a></li>
-              <li class="header__item"><a href="#">Testimonios</a></li>
-              <li class="header__item"><a href="#">Contacto</a></li>
+              <li class="header__item">
+                <a href="#products" class="link__to__go">Productos</a>
+              </li>
+              <li class="header__item">
+                <a href="#benefits" class="link__to__go">Beneficios</a>
+              </li>
+              <li class="header__item">
+                <a href="#usos" class="link__to__go">Uso</a>
+              </li>
+              <li class="header__item">
+                <a href="#aboutus" class="link__to__go">Nosotros</a>
+              </li>
+              <li class="header__item">
+                <a href="#testimonials" class="link__to__go">Testimonios</a>
+              </li>
             </ul>
-            <a href="#" class="btn btn--primary header__call__action"
-              >Nuestros Productos</a
+            <a
+              href="#contacts"
+              class="btn btn--primary header__call__action link__to__go"
+              >Consultar ahora</a
             >
           </nav>
           <div id="burger" class="header__burger">
@@ -44,7 +56,7 @@
         </div>
       </div>
     </header>
-    <section class="section banner banner__principal">
+    <section id="banner__principal" class="section banner banner__principal">
       <div class="container">
         <div class="grid">
           <div class="grid__item">
@@ -58,8 +70,12 @@
               minimizando residuos
             </p>
             <div class="banner__box__action">
-              <a href="#" class="btn btn--primary">Nuestros Productos</a>
-              <a href="#" class="btn btn--outline btn--outline--primary"
+              <a href="#products" class="btn btn--primary link__to__go"
+                >Nuestros Productos</a
+              >
+              <a
+                href="#benefits"
+                class="btn btn--outline btn--outline--primary link__to__go"
                 >Beneficios</a
               >
             </div>
@@ -69,7 +85,10 @@
     </section>
 
     <!--Productos-->
-    <section class="section bg--white bg__dots__right section__products">
+    <section
+      id="products"
+      class="section bg--white bg__dots__right section__products"
+    >
       <div class="img__float img__float--products">
         <img src="./image/products__absolute.png" alt="clean" />
       </div>
@@ -114,25 +133,91 @@
                 <p class="featured__text">Ambientalmente amigable</p>
               </li>
             </ul>
-            <a href="#" class="btn btn--primary">Comprar</a>
+            <a href="#usos" class="btn btn--primary link__to__go"
+              >¿Cómo utilizar?</a
+            >
           </div>
           <div class="grid__item grid__item--2">
             <div class="productList">
               <article class="product">
                 <figure class="product__image">
                   <img
-                    src="./image/productos/Bioverdi_Multisuperficies400.png"
+                    src="./image/productos/Bioverdi_Limpiapisos400.png"
                     alt=""
                   />
                 </figure>
                 <div class="product__separator"></div>
-                <h3 class="product__title">
-                  Limpiapisos y Multisuperficies Concentrado
-                </h3>
-                <div class="product__cost">
+                <h3 class="product__title">Limpiapisos olor a lavanda</h3>
+                <!-- <div class="product__cost">
                   <div class="product__discount">$58.262</div>
                   <div class="product__price">$48.960</div>
-                </div>
+                </div> -->
+                <ul class="product__metas">
+                  <li class="product__meta">
+                    <i class="icon-caja"></i>24 Sachets
+                  </li>
+                  <li class="product__meta">
+                    <i class="icon-litro"></i>24 Litros
+                  </li>
+                </ul>
+              </article>
+              <article class="product">
+                <figure class="product__image">
+                  <img
+                    src="./image/productos/Bioverdi_Desengrasante400.png"
+                    alt=""
+                  />
+                </figure>
+                <div class="product__separator"></div>
+                <h3 class="product__title">Desengrasante concentrado</h3>
+                <!-- <div class="product__cost">
+                  <div class="product__discount">$58.262</div>
+                  <div class="product__price">$48.960</div>
+                </div> -->
+                <ul class="product__metas">
+                  <li class="product__meta">
+                    <i class="icon-caja"></i>24 Sachets
+                  </li>
+                  <li class="product__meta">
+                    <i class="icon-litro"></i>24 Litros
+                  </li>
+                </ul>
+              </article>
+              <article class="product">
+                <figure class="product__image">
+                  <img
+                    src="./image/productos/Bioverdi_Limpiador_Frutas&Vegetales400.png"
+                    alt=""
+                  />
+                </figure>
+                <div class="product__separator"></div>
+                <h3 class="product__title">Limpiador de frutas y vegetales</h3>
+                <!-- <div class="product__cost">
+                  <div class="product__discount">$58.262</div>
+                  <div class="product__price">$48.960</div>
+                </div> -->
+                <ul class="product__metas">
+                  <li class="product__meta">
+                    <i class="icon-caja"></i>24 Sachets
+                  </li>
+                  <li class="product__meta">
+                    <i class="icon-litro"></i>24 Litros
+                  </li>
+                </ul>
+              </article>
+              <article class="product">
+                <figure class="product__image">
+                  <img
+                    src="./image/productos/Bioverdi_Sanitizante_400.png"
+                    alt=""
+                  />
+                </figure>
+                <div class="product__separator"></div>
+                <h3 class="product__title">Sanitizante ecovital</h3>
+                <!-- <div class="product__cost">
+                  <div class="product__discount">$58.262</div>
+                  <div class="product__price">$48.960</div>
+                </div> -->
                 <ul class="product__metas">
                   <li class="product__meta">
                     <i class="icon-caja"></i>24 Sachets
@@ -150,85 +235,11 @@
                   />
                 </figure>
                 <div class="product__separator"></div>
-                <h3 class="product__title">
-                  Limpiapisos y Multisuperficies Concentrado
-                </h3>
-                <div class="product__cost">
+                <h3 class="product__title">Limpiapisos y multisuperficies</h3>
+                <!-- <div class="product__cost">
                   <div class="product__discount">$58.262</div>
                   <div class="product__price">$48.960</div>
-                </div>
-                <ul class="product__metas">
-                  <li class="product__meta">
-                    <i class="icon-caja"></i>24 Sachets
-                  </li>
-                  <li class="product__meta">
-                    <i class="icon-litro"></i>24 Litros
-                  </li>
-                </ul>
-              </article>
-              <article class="product">
-                <figure class="product__image">
-                  <img
-                    src="./image/productos/Bioverdi_Multisuperficies400.png"
-                    alt=""
-                  />
-                </figure>
-                <div class="product__separator"></div>
-                <h3 class="product__title">
-                  Limpiapisos y Multisuperficies Concentrado
-                </h3>
-                <div class="product__cost">
-                  <div class="product__discount">$58.262</div>
-                  <div class="product__price">$48.960</div>
-                </div>
-                <ul class="product__metas">
-                  <li class="product__meta">
-                    <i class="icon-caja"></i>24 Sachets
-                  </li>
-                  <li class="product__meta">
-                    <i class="icon-litro"></i>24 Litros
-                  </li>
-                </ul>
-              </article>
-              <article class="product">
-                <figure class="product__image">
-                  <img
-                    src="./image/productos/Bioverdi_Multisuperficies400.png"
-                    alt=""
-                  />
-                </figure>
-                <div class="product__separator"></div>
-                <h3 class="product__title">
-                  Limpiapisos y Multisuperficies Concentrado
-                </h3>
-                <div class="product__cost">
-                  <div class="product__discount">$58.262</div>
-                  <div class="product__price">$48.960</div>
-                </div>
-                <ul class="product__metas">
-                  <li class="product__meta">
-                    <i class="icon-caja"></i>24 Sachets
-                  </li>
-                  <li class="product__meta">
-                    <i class="icon-litro"></i>24 Litros
-                  </li>
-                </ul>
-              </article>
-              <article class="product">
-                <figure class="product__image">
-                  <img
-                    src="./image/productos/Bioverdi_Multisuperficies400.png"
-                    alt=""
-                  />
-                </figure>
-                <div class="product__separator"></div>
-                <h3 class="product__title">
-                  Limpiapisos y Multisuperficies Concentrado
-                </h3>
-                <div class="product__cost">
-                  <div class="product__discount">$58.262</div>
-                  <div class="product__price">$48.960</div>
-                </div>
+                </div> -->
                 <ul class="product__metas">
                   <li class="product__meta">
                     <i class="icon-caja"></i>24 Sachets
@@ -245,7 +256,7 @@
     </section>
 
     <!--Beneficios-->
-    <section class="section bg--gray-light">
+    <section id="benefits" class="section bg--gray-light">
       <div class="img__float img__float--benefits">
         <img src="./image/benefits__absolute.png" alt="clean" />
       </div>
@@ -257,7 +268,7 @@
           <h3 class="subtitle t--secondary--light t--center">BENEFICIOS</h3>
         </div>
         <h2 class="title t--secondary mb-12 t--center">
-          ¿Por que usar nuestros productos?
+          ¿Por qué usar nuestros productos?
         </h2>
         <div class="benefitsList">
           <article class="benefit">
@@ -319,7 +330,7 @@
           </article>
         </div>
         <h2 class="title--small t--secondary mb-6 t--center">
-          ¿Como obtenemos tantos beneficios?
+          ¿Cómo obtenemos tantos beneficios?
         </h2>
         <p class="text t--black t--center text--sm--center">
           Los elementos activos de nuestros productos se originan de fuentes
@@ -333,12 +344,24 @@
     <!--call action-->
     <section class="section banner banner__call__action">
       <div class="container">
-        <h2 class="title t--white mb-12 t--center">
-          Conseguir la limpieza para tus espacios es sencillo y asequible
-        </h2>
-        <div class="banner__box__action t--center">
-          <a href="#" class="btn btn--white">Comprar</a>
-          <a href="#" class="btn btn--outline btn--outline--white">Contactar</a>
+        <div class="grid">
+          <div class="grid__item grid__item--1">
+            <h2 class="title t--white mb-12 t--center">
+              Conseguir la limpieza para tus espacios es sencillo y asequible
+            </h2>
+          </div>
+          <div class="grid__item grid__item--2">
+            <div class="banner__box__action t--center">
+              <a href="#contacts" class="btn btn--white link__to__go"
+                >Contactar</a
+              >
+              <a
+                href="#aboutus"
+                class="btn btn--outline btn--outline--white link__to__go"
+                >Sobre nosotros</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -346,14 +369,14 @@
     <!--USO Y ABOUTUS-->
     <section class="section bg__dot__full bg--white">
       <div class="container">
-        <div class="grid mb-12">
+        <div id="usos" class="grid mb-12">
           <div class="subtitle__box">
             <h3 class="subtitle t--primary--light t--center">MODO DE USO</h3>
           </div>
           <h2
             class="title t--primary mb-12 t--center text--sm--540 text--sm--center mb--sm-12"
           >
-            Como utilizar los sachets
+            ¿Cómo utilizar los sachets?
           </h2>
           <div class="usosList">
             <article class="uso">
@@ -384,9 +407,7 @@
               </figure>
               <div class="uso__info">
                 <h3 class="uso__title">3. Agrega agua</h3>
-                <p class="uso__text">
-                  Verter el contenido de sachet en un envase de 1 litro.
-                </p>
+                <p class="uso__text">Agregar agua al envase de 1 litro.</p>
               </div>
             </article>
             <article class="uso">
@@ -413,7 +434,7 @@
             </article>
           </div>
         </div>
-        <div class="grid grid__aboutus">
+        <div id="aboutus" class="grid grid__aboutus">
           <div class="grid__item">
             <h3 class="subtitle t--primary--light">SOBRE NOSOTROS</h3>
             <h2 class="title t--primary mb-6">
@@ -457,7 +478,6 @@
                 <p class="featured__text">Compromiso y Cumplimiento</p>
               </li>
             </ul>
-            <a href="#" class="btn btn--primary">Conocer más</a>
           </div>
           <div class="grid__item hidden--xsm">
             <img class="img--full" src="./image/aboutus.png" alt="" />
@@ -467,7 +487,7 @@
     </section>
 
     <!--Testimonial-->
-    <section class="section bg--white">
+    <section id="testimonials" class="section bg--white">
       <div class="container">
         <div class="subtitle__box">
           <h3 class="subtitle t--secondary--light t--center">TESTIMONIOS</h3>
@@ -570,7 +590,7 @@
     </section>
 
     <!--Testimonial-->
-    <section class="section bg--gray-light section__contact">
+    <section id="contacts" class="section bg--gray-light section__contact">
       <div class="container">
         <div class="grid">
           <div class="grid__item">
